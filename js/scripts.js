@@ -1,3 +1,4 @@
+// Back-end logic
 function Player() {
   this.flags = [];
 }
@@ -6,6 +7,7 @@ Player.prototype.addFlag = function(flag) {
   this.flags.push(flag);
 };
 
+// Comment request, specifically, what is the if statement checking for, and how?
 Player.prototype.removeFlag = function(flag) {
   for (i = 0; i < this.flags.length; i++) {
     if (this.flags[i] == flag) {
@@ -15,7 +17,7 @@ Player.prototype.removeFlag = function(flag) {
   }
 };
 
-
+// UI logic
 var player = new Player()
 
 $(document).ready(function() {
